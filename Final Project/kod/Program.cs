@@ -1,4 +1,5 @@
-﻿void ShowArray(string[] array)
+﻿
+void ShowArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
@@ -36,3 +37,6 @@ string[] SecondArrayMax3(string[] array)
         }
     return newArray;
 }
+
+string[] stringArray = FirstArray();
+ShowArray(SecondArrayMax3(stringArray));
